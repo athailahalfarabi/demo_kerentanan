@@ -25,11 +25,12 @@ Tidak ada pengecekan role
 ## Format Path MySQL:
 Untuk MySQL :
 C:\laragon\bin\mysql\mysql-8.0.30-winx64\bin\mysql.exe
-## Test Security Demo Database
-```bash# Show tables
-mysql.exe -u root -e "USE security_demo; SHOW TABLES;"```
+## Test Security Demo Database: 
+bash
+## Show tables
+```mysql.exe -u root -e "USE security_demo; SHOW TABLES;"```
 
-# Show users
+# Show users:
 ```mysql.exe -u root -e "SELECT * FROM security_demo.users;"```
 ## Insert Test User
 ```mysql.exe -u root -e "INSERT INTO security_demo.users (username, password, email, role) VALUES ('test2', 'test123', 'test2@demo.com', 'user');"```
